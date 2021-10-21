@@ -261,7 +261,7 @@ summary {
   display: list-item;
 }
 
-/* all lists */
+/* placeholders */
 body {
   color: #757575;
   background-color: #ffffff;
@@ -301,12 +301,34 @@ p {
   list-style: none;
 }
 
+/* container */
 .conteiner {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* container adaptive */
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+    background-color: green;
+  }
 }
 
 .button--primary,
@@ -329,6 +351,7 @@ p {
   padding-bottom: 94px;
 }
 
+/* mixins */
 .skills-list__title {
   display: -webkit-box;
   display: -ms-flexbox;

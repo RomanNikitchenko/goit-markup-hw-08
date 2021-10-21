@@ -4,6 +4,8 @@
   align-items: $align-items;
   justify-content: $justify-content;
 }
+
+/* mixins */
 .skills-list__title {
   @include centeredFlex();
 }
