@@ -1,0 +1,24 @@
+.contact-footer {
+  width: 230px;
+
+  &__text,
+  &__link {
+    font-style: normal;
+    line-height: 1.71;
+    display: block;
+  }
+
+  &__link {
+    color: $text-color-white-a;
+    text-decoration: none;
+    margin-top: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}

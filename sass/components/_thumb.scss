@@ -1,0 +1,20 @@
+.thumb {
+  border: solid 1px $card-border-color;
+  border-top: 0;
+  padding: 20px 24px;
+
+  .thumb__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+    margin: 0 0 4px;
+  }
+
+  .thumb__text {
+    font-size: 16px;
+    line-height: 1.87;
+    color: $primary-text-color;
+  }
+}

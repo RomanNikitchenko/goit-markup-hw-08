@@ -1,0 +1,31 @@
+.feature-list {
+  display: flex;
+  margin-left: -30px;
+
+  &__item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  &__block-icon {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: $bg-color-light;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    margin: auto;
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+  }
+  &__text {
+    line-height: 1.71;
+  }
+}

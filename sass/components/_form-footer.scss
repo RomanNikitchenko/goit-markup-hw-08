@@ -1,0 +1,45 @@
+.form-footer {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+
+  &__form-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form-label {
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__form-input {
+    background: $bg-color-footer;
+    min-width: 358px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $text-color-white;
+  }
+
+  &__form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    fill: $text-color-white;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}

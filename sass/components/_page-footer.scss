@@ -1,0 +1,24 @@
+.page-footer {
+  background-color: $bg-color-footer;
+  color: $text-color-white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__conteiner {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  /*logo footer*/
+  &__logo {
+    color: $text-color-white;
+    margin-bottom: 20px;
+    margin-right: 0;
+    display: inline-block;
+  }
+
+  &__contact-footer {
+    margin-right: 70px;
+  }
+}

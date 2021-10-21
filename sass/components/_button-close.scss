@@ -1,0 +1,25 @@
+/* button close */
+.button-close {
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $bg-color-white;
+  border-radius: 50%;
+
+  &__icon {
+    fill: $text-color-blac;
+    margin: auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: $accent-color;
+  }
+}

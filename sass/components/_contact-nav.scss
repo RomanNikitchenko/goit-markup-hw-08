@@ -1,0 +1,36 @@
+.contact-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: flex;
+    padding: 24px 0;
+    color: $primary-text-color;
+    fill: $color3;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+    .contact-nav__icon {
+      margin-right: 10px;
+    }
+  }
+}
+.contact-nav--end {
+  margin-left: auto;
+}

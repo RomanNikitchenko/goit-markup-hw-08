@@ -1,0 +1,29 @@
+.team-member {
+  background-color: $bg-color-white;
+  text-align: center;
+  margin-left: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__bottom-description {
+    padding: 30px 32px;
+  }
+
+  &__title {
+    font-weight: 500;
+    color: $title-text-color;
+    margin-bottom: 10px;
+  }
+
+  &__title,
+  &__text {
+    font-size: 16px;
+    line-height: 1.18;
+  }
+}
+
+.team-member--end {
+  margin-left: 30px;
+}
