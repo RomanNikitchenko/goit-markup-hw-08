@@ -309,25 +309,25 @@ p {
   padding-right: 15px;
 }
 
-/* container adaptive */
+/* responsive-container */
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
-    background-color: red;
+    background-color: #4d73ac;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
     width: 768px;
-    background-color: yellow;
+    background-color: #a835b8;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .conteiner {
     width: 1200px;
-    background-color: green;
+    background-color: #82e282;
   }
 }
 

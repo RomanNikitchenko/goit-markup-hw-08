@@ -56,28 +56,25 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
-.conteiner {
-  @extend %conteiner;
-}
-/* container adaptive */
-%adaptiveConteiner {
+/* responsive-container */
+%responsive-container {
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-color: red;
+    background-color: rgb(77, 115, 172);
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    background-color: yellow;
+    background-color: rgb(168, 53, 184);
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    background-color: green;
+    background-color: rgb(130, 226, 130);
   }
 }
 .conteiner {
-  @extend %adaptiveConteiner;
+  @extend %conteiner, %responsive-container;
 }
 
 %button {
