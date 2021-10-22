@@ -60,7 +60,7 @@ p {
 %responsive-container {
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-color: rgb(77, 115, 172);
+    background-color: rgb(72, 200, 209);
   }
 
   @media screen and (min-width: 768px) {
@@ -92,8 +92,15 @@ p {
 }
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .feature-section,
 .team-section,

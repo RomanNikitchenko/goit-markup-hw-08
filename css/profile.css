@@ -313,7 +313,7 @@ p {
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
-    background-color: #4d73ac;
+    background-color: #48c8d1;
   }
 }
 
@@ -342,13 +342,26 @@ p {
   margin: 0;
 }
 
-.feature-section,
-.team-section,
-.clients-section,
-.skills-section,
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .feature-section,
+  .team-section,
+  .clients-section,
+  .skills-section,
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-section,
+  .team-section,
+  .clients-section,
+  .skills-section,
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* mixins */
