@@ -320,7 +320,7 @@ p {
 @media screen and (min-width: 768px) {
   .conteiner {
     width: 768px;
-    background-color: #a835b8;
+    background-color: #ea88f7;
   }
 }
 
@@ -476,26 +476,41 @@ p {
   background-color: #2196f3;
 }
 
-.contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .contact-nav {
+    display: block;
+  }
 }
 
-.contact-nav__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contact-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact-nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 24px 0;
   color: #757575;
   fill: #757575;
   -webkit-box-align: center;
@@ -518,7 +533,7 @@ p {
   fill: #2196f3;
 }
 
-.contact-nav__link .contact-nav__icon {
+.contact-nav__icon {
   margin-right: 10px;
 }
 
@@ -672,6 +687,12 @@ p {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-list__title {
+    text-align: center;
+  }
 }
 
 .feature-list__text {

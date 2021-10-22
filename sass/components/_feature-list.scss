@@ -48,6 +48,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $title-text-color;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__text {
     line-height: 1.71;
