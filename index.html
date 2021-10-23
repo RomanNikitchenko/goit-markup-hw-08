@@ -47,6 +47,21 @@
                     </a>
                 </li>
             </ul>
+            <button type="button"
+                    class="button-nav" 
+                    aria-expanded="false" 
+                    aria-controls="menu-continer"
+                    data-menu-button>
+
+                <svg class="button-nav__icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                    <use class="button-nav__icon-menu" href="./images/icons.svg#menu_40px"></use>
+                    <use class="button-nav__icon-close" href="./images/icons.svg#close_40px"></use>
+                </svg>
+            </button>
+
+            <div class="menu-continer" id="menu-continer" data-menu>
+                Контент меню
+            </div>
         </div>
     </header>
 
@@ -524,6 +539,9 @@
 
         </div>
     </div>
+
+    <!-- для мобильной кнопки навигации -->
+    <script src="./js/menu.js"></script>
 
     <!-- js для вкл/откл модального окна через селектор класса is-hidden (кнопка в hero/кнопка в modal) -->
     <script src="./js/modal.js"></script>

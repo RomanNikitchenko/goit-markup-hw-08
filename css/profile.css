@@ -435,6 +435,12 @@ p {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -476,22 +482,26 @@ p {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+.contact-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1199px) {
   .contact-nav {
     display: block;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .contact-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: none;
   }
 }
 
