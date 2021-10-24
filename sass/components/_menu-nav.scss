@@ -1,3 +1,4 @@
+// button open/close
 .button-nav {
   display: flex;
   padding: 0;
@@ -5,6 +6,7 @@
   border: 0;
   background-color: $bg-color-white;
   margin: 10px 0 10px auto;
+  z-index: 1;
 }
 
 .button-nav {
@@ -40,12 +42,23 @@
   display: block;
 }
 
+// Menu
 .menu-continer {
   display: none;
-  width: 40px;
-  height: 40px;
 }
 
-.menu-continer.is-open {
-  display: block;
+.menu-continer.menu-continer--is-open {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: fuchsia;
+}
+
+.menu-continer.menu-continer--is-open {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

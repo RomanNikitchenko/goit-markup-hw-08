@@ -270,6 +270,10 @@ body {
   font-size: 14px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   width: 100%;
@@ -389,8 +393,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  position: relative;
 }
 
 .main-nav {
@@ -560,6 +563,7 @@ p {
   border: 0;
   background-color: #ffffff;
   margin: 10px 0 10px auto;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -598,12 +602,24 @@ p {
 
 .menu-continer {
   display: none;
-  width: 40px;
-  height: 40px;
 }
 
-.menu-continer.is-open {
-  display: block;
+.menu-continer.menu-continer--is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: fuchsia;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-continer.menu-continer--is-open {
+    display: none;
+  }
 }
 
 .hero-section {
@@ -856,8 +872,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-left: -10px;
 }
 
@@ -1099,6 +1113,7 @@ p {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1120,6 +1135,27 @@ p {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .beckdrop__modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .beckdrop__modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .beckdrop__modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .beckdrop--is-hidden {
