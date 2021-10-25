@@ -1,11 +1,21 @@
 .form-footer {
   display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-end;
+    margin-left: auto;
+  }
 
   &__form-field {
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 
   &__form-label {

@@ -1,17 +1,27 @@
 .contact-footer {
-  width: 230px;
+  @media screen and (min-width: 1200px) {
+    .conteiner {
+      width: 230px;
+    }
+  }
 
   &__text,
   &__link {
     font-style: normal;
     line-height: 1.71;
     display: block;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__link {
     color: $text-color-white-a;
     text-decoration: none;
-    margin-top: 9px;
+    margin-top: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 9px;
+    }
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

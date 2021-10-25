@@ -1,5 +1,6 @@
 .list-clients {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .list-clients--negative-offset {

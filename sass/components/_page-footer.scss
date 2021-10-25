@@ -5,9 +5,31 @@
   padding-bottom: 60px;
 
   &__conteiner {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+
+  &__address {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
   }
 
   /*logo footer*/
@@ -15,10 +37,8 @@
     color: $text-color-white;
     margin-bottom: 20px;
     margin-right: 0;
-    display: inline-block;
-  }
-
-  &__contact-footer {
-    margin-right: 70px;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
   }
 }

@@ -7,8 +7,27 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:nth-child(-n + 2) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__bottom-description {
     padding: 30px 32px;
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 24px;
+    }
   }
 
   &__title {
