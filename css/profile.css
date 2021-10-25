@@ -299,7 +299,10 @@ p {
 .list-clients,
 .contact-footer,
 .filter,
-.works-list {
+.works-list,
+.navigation__list,
+.contacts__list,
+.social-networks__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -420,7 +423,13 @@ p {
 }
 
 .main-nav__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__logo {
+    margin-right: 93px;
+  }
 }
 
 .main-nav__logo--color {
@@ -444,8 +453,10 @@ p {
   }
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {

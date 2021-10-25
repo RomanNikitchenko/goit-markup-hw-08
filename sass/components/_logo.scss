@@ -11,7 +11,10 @@
 }
 
 .main-nav__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .main-nav__logo--color {
   color: $text-color-blac;

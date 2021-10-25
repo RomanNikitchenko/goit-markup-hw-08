@@ -50,7 +50,10 @@ p {
 .list-clients,
 .contact-footer,
 .filter,
-.works-list {
+.works-list,
+.navigation__list,
+.contacts__list,
+.social-networks__list {
   @extend %list;
 }
 /* container */
