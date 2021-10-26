@@ -277,6 +277,7 @@ body.modal-open {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   body {
     width: 480px;
+    margin: auto;
   }
 }
 
