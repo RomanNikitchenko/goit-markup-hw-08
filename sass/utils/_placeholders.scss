@@ -67,17 +67,14 @@ p {
 %responsive-container {
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-color: rgb(72, 200, 209);
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    background-color: rgb(234, 136, 247);
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    background-color: rgb(130, 226, 130);
   }
 }
 .conteiner {

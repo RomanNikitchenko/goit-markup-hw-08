@@ -9,6 +9,12 @@
     flex-basis: calc(100% / 3 - 30px);
   }
 
+  &:nth-child(1) .thumb {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      height: 146px;
+    }
+  }
+
   &__link {
     display: block;
     text-decoration: none;
