@@ -274,13 +274,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  body {
-    width: 480px;
-    margin: auto;
-  }
-}
-
 img {
   display: block;
   width: 100%;
