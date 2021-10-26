@@ -413,9 +413,16 @@ p {
 .logo {
   font-family: Raleway, cursive;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__accent {
@@ -541,7 +548,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  line-height: 1.15;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition-property: color, fill;
@@ -552,6 +560,13 @@ p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .contact-nav__link:hover, .contact-nav__link:focus {
   color: #2196f3;
   fill: #2196f3;
@@ -559,6 +574,19 @@ p {
 
 .contact-nav__icon {
   margin-right: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav__icon:first-child {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__icon:last-child {
+    display: block;
+  }
 }
 
 .contact-nav--end {

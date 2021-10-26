@@ -38,14 +38,14 @@
 
   &__modal {
     @media screen and (min-width: 768px) {
-      min-width: 528px;
-      min-height: 581px;
+      width: 450px;
+      min-height: 609px;
     }
   }
 
   &__modal {
     @media screen and (min-width: 1200px) {
-      min-width: 528px;
+      width: 528px;
       min-height: 581px;
     }
   }
