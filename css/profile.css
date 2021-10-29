@@ -1255,6 +1255,12 @@ p {
 
 @media screen and (min-width: 480px) {
   .form-footer__form-input {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__form-input {
     min-width: 358px;
   }
 }
@@ -1293,8 +1299,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer__button {
+    margin-left: 12px;
+  }
 }
 
 .form-footer__icon {

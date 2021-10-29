@@ -34,6 +34,9 @@
     border-radius: 4px;
     color: $text-color-white;
     @media screen and (min-width: 480px) {
+      min-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
       min-width: 358px;
     }
   }
@@ -48,8 +51,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 12px;
     fill: $text-color-white;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
   }
 
   &__icon {
