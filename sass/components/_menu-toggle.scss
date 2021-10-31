@@ -8,12 +8,8 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
-  outline: none;
-  &:hover,
-  &:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+  // outline: none;
+
   &:hover .menu-toggle__icon-menu,
   &:hover .menu-toggle__icon-close,
   &:focus .menu-toggle__icon-menu,
@@ -30,18 +26,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100vw;
-  min-height: 92vh;
+  width: 100vw;
+  height: 100vh;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 999;
 
   display: none;
-
-  @media screen and (min-width: 480px) {
-    min-height: 100vh;
-  }
 }
 
 .menu-container.is-open {
@@ -49,22 +41,25 @@
 }
 
 .cont {
-  max-width: 450px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 15px;
-  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  position: relative;
+  padding: 48px 0 100px 40px;
+  @media screen and (min-width: 480px) {
+    padding: 48px 40px;
+  }
 }
 
 .menu-container .menu-toggle {
   margin: 0;
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 15px;
   color: $title-text-color;
 }
 
@@ -93,7 +88,10 @@
 
 .contacts {
   margin-top: auto;
-  margin-bottom: 64px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 64px;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -128,6 +126,10 @@
   &__list {
     @media screen and (max-width: 479px) {
       flex-direction: column;
+
+      .social-networks__item:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
 
     display: flex;
