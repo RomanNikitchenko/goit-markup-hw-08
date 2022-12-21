@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+        integrity="sha256-r7Neol40GubQBzMKAJovEaXbl9FClnADCrIMPljlx3E=" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -159,52 +161,7 @@
                 <h2 class="section-title section-title--margin section-title--margin--not-displaye">Особенности</h2>
 
                 <ul class="feature-list list">
-
-                    <li class="feature-list__item">
-                        <div class="feature-list__block-icon">
-                            <svg class="feature-list__icon" width="70" height="70">
-                                <use href="./images/icons.svg#antenna"></use>
-                            </svg>
-                        </div>
-                        <h3 class="feature-list__title">Внимание к деталям</h3>
-                        <p class="feature-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.
-                        </p>
-                    </li>
-
-                    <li class="feature-list__item">
-                        <div class="feature-list__block-icon">
-                            <svg class="feature-list__icon" width="70" height="70">
-                                <use href="./images/icons.svg#clock"></use>
-                            </svg>
-                        </div>
-                        <h3 class="feature-list__title">Пунктуальность</h3>
-                        <p class="feature-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за
-                            собой.
-                        </p>
-                    </li>
-
-                    <li class="feature-list__item">
-                        <div class="feature-list__block-icon">
-                            <svg class="feature-list__icon" width="70" height="70">
-                                <use href="./images/icons.svg#diagram"></use>
-                            </svg>
-                        </div>
-                        <h3 class="feature-list__title">Планирование</h3>
-                        <p class="feature-list__text">Равным образом консультация с широким активом в значительной степени
-                            обуславливает.
-                        </p>
-                    </li>
-
-                    <li class="feature-list__item">
-                        <div class="feature-list__block-icon">
-                            <svg class="feature-list__icon" width="70" height="70">
-                                <use href="./images/icons.svg#astronaut"></use>
-                            </svg>
-                        </div>
-                        <h3 class="feature-list__title">Современные технологии</h3>
-                        <p class="feature-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-
+                    <!--использую <script src="./js/feature.js"></script>-->
                 </ul>
             </div>
         </section>
@@ -482,55 +439,7 @@
                 <h2 class="section-title section-title--margin">Постоянные клиенты</h2>
 
                 <ul class="list-clients list-clients--negative-offset list">
-
-                    <li class="item-clients item-clients--end">
-                        <a class="item-clients__link" href="">
-                            <svg class="item-clients__icon" width="106" height="60">
-                                <use href="./images/icons.svg#Logo1"></use> 
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="item-clients item-clients--end">
-                        <a class="item-clients__link" href="">
-                            <svg class="item-clients__icon" width="106" height="60">
-                                <use href="./images/icons.svg#Logo2"></use> 
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="item-clients item-clients--end">
-                        <a class="item-clients__link" href="">
-                            <svg class="item-clients__icon" width="106" height="60">
-                                <use href="./images/icons.svg#Logo3"></use> 
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="item-clients item-clients--end">
-                        <a class="item-clients__link" href="">
-                            <svg class="item-clients__icon" width="106" height="60">
-                                <use href="./images/icons.svg#Logo4"></use> 
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="item-clients item-clients--end">
-                        <a class="item-clients__link" href="">
-                            <svg class="item-clients__icon" width="106" height="60">
-                                <use href="./images/icons.svg#Logo5"></use> 
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="item-clients item-clients--end">
-                        <a class="item-clients__link" href="">
-                            <svg class="item-clients__icon" width="106" height="60">
-                                <use href="./images/icons.svg#Logo6"></use> 
-                            </svg>
-                        </a>
-                    </li>
-
+                    <!--использую <script src="./js/clients.js"></script>-->
                 </ul>
             </div>
         </section>
@@ -678,6 +587,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
+
     <script defer src="js/mobile-menu.js"></script>
 
     <!-- menu-nav variant2 кнопка меню-->
@@ -685,6 +595,12 @@
 
     <!-- js для вкл/откл модального окна через селектор класса is-hidden (кнопка в hero/кнопка в modal) -->
     <script src="./js/modal.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"
+        integrity="sha256-nMn34BfOxpKD0GwV5nZMwdS4e8SI8Ekz+G7dLeGE4XY=" crossorigin="anonymous"></script>
+
+    <script src="./js/feature.js"></script>
+    <script src="./js/clients.js"></script>
     
 </body>
 
